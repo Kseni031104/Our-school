@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша школа - Ретро стиль</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Courier+New&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #FDF6E3;
+            font-family: 'Cinzel', serif;
+            color: #2F2F2F;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #800020;
+        }
+
+        .carousel h2,
+        .carousel h3,
+        .carousel h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #d4a017;
+        }
+
+        .navbar {
+            background-color: #6B705C;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-link:hover {
+            color: #FFFFFF !important;
+        }
+
+        .navbar-toggler {
+            background-color: #d4a017;
+        }
+
+        .carousel {
+            width: 55%;
+            margin: auto;
+        }
+        
+        .carousel-inner img {
+            filter: sepia(20%);
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .welcome-section {
+            background: linear-gradient(to bottom, #F5F5DC, #f9f9e9);
+            padding: 50px 0;
+            margin: 20px 0;
+        }
+
+        .advantages-section {
+            color: #F5F5DC;
+            padding: 15px 0;
+        }
+
+        .advantages-section .card {
+            background: #f0f0f07a;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .lead {
+            font-size: 1.75rem;
+        }
+
+        .advantages-section .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #6B705C;
+            color: #F5F5DC;
+            padding: 20px 0;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./img/45-degree-fabric-light.png');
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .deco {
+            margin: 25px auto;
+            width: fit-content;
+        }
+
+        .about {
+            color: #2e1e0f;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Наша школа</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">Про нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#modern-programs">Сучасні програми</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#qualified-teachers">Кваліфіковані вчителі</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#talent-development">Розвиток талантів</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="deco flip deco-1"><img src="./img/deco-2.png" alt=""></div>
+
+    <section class="welcome-section">
+        <div class="container text-center">
+            <h1>Як до нас дістатися</h1>
+        </div>
+    </section>
+
+    <div class="deco deco-1"><img src="./img/deco-3.png" alt=""></div>
+
+    <section class="advantages-section about">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="my-3 text-center">Станція Кінгс-Крос (Платформа 9¾)</h2>
+                    <p class="text-center">Прибудьте на вокзал Кінгс-Крос у Лондоні. Знайдіть бар’єр між платформами 9 і 10. Швидко пройдіть крізь нього — не бійтеся, це магічний портал! Ви опинитеся на платформі 9¾, де чекає Гоґвортський Експрес.</p>
+                </div>
+
+                <div class="card col-md-6 p-3 mx-auto">
+                    <img src="./img/platform.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="deco deco-1"><img src="./img/deco-5.png" alt=""></div>
+
+    
+    <section class="advantages-section about">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="my-3 text-center">Гоґвортський Експрес</h2>
+                    <p class="text-center">Сідайте на Гоґвортський Експрес, який відправляється о 11:00. Під час подорожі насолоджуйтесь краєвидами магічного світу, куштуйте солодощі з візка (рекомендуємо шоколадних жаб!) і знайомтесь із іншими учнями.</p>
+                </div>
+
+                <div class="card col-md-6 p-3 mx-auto">
+                    <img src="./img/train.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="deco deco-1"><img src="./img/deco-5.png" alt=""></div>
+    
+    <section class="advantages-section about">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="my-3 text-center">Прибуття до замку</h2>
+                    <p class="text-center">Після прибуття на станцію Гоґсміда вас зустріне наш гайовий. Першокурсники попливуть через озеро на зачарованих човнах, милуючись першим видом на замок. Інші учні поїдуть у каретах, запряжених невидимими фестралами.</p>
+                </div>
+
+                <div class="card col-md-6 p-3 mx-auto">
+                    <img src="./img/gogsmit.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="deco deco-1"><img src="./img/deco-4.png" alt=""></div>
+
+    <footer class="text-center">
+        <p>© 2025 Наша школа. Усі права захищені.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
